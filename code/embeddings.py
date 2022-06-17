@@ -60,7 +60,7 @@ class MappedEmbedding(Embedding):
 class GensimEmbedding(Embedding):
     def __init__(self, prefix = "", do_lower_case = False,
             start_chars = (ROBERTA_START_CHAR, XLNET_START_CHAR)):
-        self.start_char_pat = re.compile("|".join(["\A" + char for char in start_chars]))
+        self.start_char_pat = re.compile("|".join([r"\A" + char for char in start_chars]))
         self.do_lower_case = do_lower_case
         self.prefix = prefix
 
