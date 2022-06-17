@@ -7,7 +7,7 @@ from collections import Counter
 
 HEADERS = {"User-agent": "CIS Munich"}
 SPARQL_API = "https://query.wikidata.org/sparql"
-WIKIDATA_RGX = re.compile("\AQ[0-9]+\Z")
+WIKIDATA_RGX = re.compile(r"\AQ[0-9]+\Z")
 WIKI_API = "https://en.wikipedia.org/w/api.php"
 
 
